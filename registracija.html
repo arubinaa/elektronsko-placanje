@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektronsko plaćanje računa</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reg.css">
+    <script src="struktura.js"></script>
+    
+</head>
+<body>
+    <header id="hdr1">
+        <div class="menu">
+            <button onclick="myFunction()" class="menu">MENU</button>
+            <div id="myMenu" class="menu-content">
+            <a href="pocetna.html">Početna</a>
+            <a href="oNama.html">O nama</a>
+            <a href="kalkulator.html">Kalkulator</a>
+            </div>
+        </div>
+        <div class="prijava">
+            <a href="prijava.html">PRIJAVA</a>
+        </div>
+    </header>
+
+    <form action="action_page.php">
+        <div id="divreg" class="container">
+          <h1>Registracija</h1>
+          <p>Da bi ste se registrovali molimo vas da ispunite sva polja.</p>
+          
+      
+          
+          <input class="inputi" type="text" placeholder=" Ime " name="ime" id="ime" value="" required> <br> <br>
+      
+          
+          <input  class="inputi" type="prezime" placeholder=" Prezime" name="prezime" id="prezime" value="" required> <br> <br>
+      
+          
+          <input  class="inputi"  type="korime" placeholder=" Korisničko ime" name="korime" id="unoskorime" value="" required> <br> <br>
+
+          
+          <input  class="inputi" type="email" placeholder=" Email" name="email" id="email" value="" required> <br> <br>
+
+          
+          <input  class="inputi" type="adresa" placeholder="Adresa" name="adresa" id="adresa" value="" required> <br> <br>
+
+          
+          <input  class="inputi" type="brojtel" placeholder="Broj telefona" name="brojtel" id="brojtel" value="" required> <br> <br>
+
+          
+          <input  class="inputi" type="password" placeholder="Šifra" name="psw" id="unospsw" value="" required> 
+          <input id="chck" type="checkbox" onclick="checkPsw1()">Prikaži Password<br> <br>
+          
+          <input  class="inputi"  type="password" placeholder="Ponovno unesite istu šifru za potvrdu" name="psw2" id="unospsw2" required> 
+          <input id="chck" type="checkbox" onclick="checkPsw2()">Prikaži Password<br> <br>
+
+          <button onclick="registruj()" type="button" class="registerbtn">Registracija</button>
+        </div>
+      
+        
+      </form>
+      
+</body>
+</html>

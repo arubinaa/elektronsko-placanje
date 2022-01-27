@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPLATNICA</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <script src="struktura.js"></script>
+
+</head>
+<body>
+
+    <header id="hdr1">
+        <div class="menu">
+            <button onclick="myFunction()" class="menu">MENU</button>
+            <div id="myMenu" class="menu-content">
+            <a href="pocetna.html">Početna</a>
+            <a href="oNama.html">O nama</a>
+            <a href="kalkulator.html">Kalkulator</a>
+            </div>
+        </div>        
+    </header>
+    <div id="glavni">    
+    <div id="nslv"><h1 id="n4"><img style="height: 23px; width: 26px;" src="favicon.ico" alt="logo">ELEKTRONSKO PLAĆANJE STRUJE</h1></div>
+    
+    <div id="prvi">
+    <p style="color:blueviolet ;font-weight:bold;">OSNOVA</p>
+    
+    <label for="period">Račun za period: </label>
+    <input  id="period" type="text" name="period" value="" >
+    <br><br>
+    
+    <p style="color:blueviolet ;font-weight:bold;">NALOGODAVAC</p><br>
+    <label for="ime">Ime i prezime: </label>
+    <input id="ime" type="text" name="ime" value="" >
+    <label for="adresa">Adresa: </label>
+    <input id="adresa" type="text" name="adresa" value="" >
+    <br><br>
+    
+    
+    <p style="color:blueviolet ;font-weight:bold;">TRANSAKCIJSKI RAČUN KOD POSLOVNIH BANAKA</p><br>
+    <p>3389002208089289 - Unicredit Bank d.d.</p>
+    <p>1549212004440975 - Intesa Sanpaolo Bank d.d.</p>
+    <p>1401011110006341 - Sberbank BH d.d.</p>
+
+    </div>
+
+    <div id="drugi">        
+
+        <p style="color:blueviolet ;font-weight:bold;">PRIMALAC<p><br>
+            <label for="racun">Transakcijski broj računa: </label>
+            <input id="racun" type="text" name="racun" value="" ><br><br>
+            <label for="referenca">Referenca: </label>
+            <input id="referenca" type="text" name="referenca" value="" ><br><br>
+            <label for="iznos">Unesite iznos za platiti: </label>
+            <input id="iznos" type="text" name="iznos" value="" ><br><br>
+            <label for="datum">Datum uplate: </label>
+            <input id="datum" type="text" name="datum" value="" ><br><br>
+            
+            <p style="font-weight:bold;">IME: Elektrodistribucija Sarajevo</p><br>
+            
+            <p style="font-weight:bold;">ADRESA I MJESTO: Zmaja od Bosne 49, Sarajevo</p><br><br>
+            <button onclick="uplati()" type="button" class="button1">UPLATI</button>
+               
+
+    </div>
+
+</div>
+
+</body>
+</html>

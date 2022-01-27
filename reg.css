@@ -1,0 +1,39 @@
+body{
+    background-color: aliceblue;
+}
+#divreg {
+    width:1000px;
+    height:650px;
+    position:absolute;
+    left:350px;
+    top:50px;
+}
+.inputi {
+    position:absulute;
+    width:500px;
+    height:40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.registerbtn{
+    position: absolute;
+    width:508px;
+    height:46px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightcoral;
+    color: white;
+}
+#chck{
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+    top: 12px;
+  }

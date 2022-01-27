@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <script src="struktura.js"></script>
+</head>
+<body id="kalkulatorBody">
+    <header>
+    <div class="menu">
+        <button onclick="myFunction()" class="menu">MENU</button>
+        <div id="myMenu" class="menu-content">
+          <a href="pocetna.html">Početna</a>
+          <a href="oNama.html">O nama</a>
+          <a href="kalkulator.html">Kalkulator</a>
+        </div>
+      </div>
+      <div class="prijava">
+        <a href="prijava.html">PRIJAVA</a>
+    </div>
+    </header>
+    <div id="pozadina"></div>
+    <div id="inputPolja">
+        <p>PRVA TARIFNA GRUPA</p> <br>
+    
+        <label for="mjernoMjesto">Unesite mjerno mjesto: </label>
+        <input id="mjernoMjesto" type="text" name="mjernoMjesto" value="" >
+        <br><br>
+        
+        <label for="aktivnaEnergija">Unesite aktivnu energiju (u kWh): </label>
+        <input id="aktivnaEnergija" type="text" name="aktivnaEnergija" value="">
+        <br><br>
+    
+        
+        <label for="obnovljiviIzvori">Obnovljivi izvori(aktivna snaga izražena u kWh): </label>
+        <input id="obnovljiviIzvori" type="text" name="obnovljiviIzvori" value=""><br><br>
+        <button onclick="prvaTarifnaGrupa();" type="button" id="btnn" name="button">Ukupna potrošnja energije za prvu tarifnu grupu (u KM) </button>
+        <p id="demo"></p>
+        <br><br>
+        
+        <p>DRUGA TARIFNA GRUPA</p> <br><br>
+    
+        <label for="mjernoMjesto">Unesite mjerno mjesto: </label>
+        <input id="mjernoMjesto" type="text" name="mjernoMjesto" value="" >
+        <br><br>
+    
+        <label for="obnovljiviIzvori">Obnovljivi izvori(aktivna snaga izražena u kWh): </label>
+        <input id="obnovljiviIzvori" type="text" name="obnovljiviIzvori" value="" >
+        <br><br>
+    
+        <label for="vecaTarifa">Unesite aktivnu energiju - veća tarifa: </label>
+        <input id="vecaTarifa" type="text" name="vecaTarifa" value="" >
+        <br><br>
+    
+        <label for="manjaTarifa">Unesite aktivnu energiju - manja tarifa: </label>
+        <input id="manjaTarifa" type="text" name="manjaTarifa" value="" ><br>
+        <br>
+        <button onclick="drugaTarifnaGrupa();" type="button" id="btnn1" name="button">Ukupna potrošnja energije za drugu tarifnu grupu (u KM) </button>
+        <p id="demo1"></p>
+        </div>
+</body>
+</html>

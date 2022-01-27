@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elektronsko plaćanje računa</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="prijava.css">
+        <script src="struktura.js"></script>
+
+    </head>    
+    <body>
+        <header id="hdr1">
+            <div class="menu">
+                <button onclick="myFunction()" class="menu">MENU</button>
+                <div id="myMenu" class="menu-content">
+                <a href="pocetna.html">Početna</a>
+                <a href="oNama.html">O nama</a>
+                <a href="kalkulator.html">Kalkulator</a>
+                </div>
+            </div>
+            <div class="prijava">
+                <a href="prijava.html">PRIJAVA</a>
+            </div>
+        </header>
+
+        <div id="div5">
+            <h1>PRIJAVA KORISNIKA</h1>
+        </div>  
+        <div id="div6">
+            <p id="para3">
+                Da bi ste mogli izvršiti elektronsko plaćanje računa molimo Vas da se prijavite na naš korisnički interfejs.
+            </p>
+        </div> 
+        <form action="action_page.php" method="post">
+         <div id="div1">
+            <label for="korime">Korisničko ime: </label><br>
+            <input id="korime" type="text" name="korime" value="" required><br><br>
+
+            <label for="psw">Password: </label><br>
+            <input id="psw" type="password" name="psw" value="" required>
+            <input id="chck" type="checkbox" onclick="checkPsw()">Prikaži Password<br><br>
+            
+            <button onclick="prijavise()" id="btn1" type="button" name="button">PRIJAVA</button>
+            <a id="a1" href="registracija.html">Niste registrovani?</a>
+         </div>   
+       
+       
+        
+    </body>
+</html>
